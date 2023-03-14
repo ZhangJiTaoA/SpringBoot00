@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper xmlns="http://mybatis.org/schema/mybatis-mapper" namespace="com/zjt/project03mybatis/mapper/UserXmlMapper.java">
+    <select id="findAll" resultType="user">
+        select * from t_user
+    </select>
+</mapper>
