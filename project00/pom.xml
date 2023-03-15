@@ -14,9 +14,6 @@
     <packaging>pom</packaging>
     <name>project00</name>
     <description>project00</description>
-    <modules>
-        <module>project99-Test</module>
-    </modules>
     <properties>
         <java.version>1.8</java.version>
     </properties>
