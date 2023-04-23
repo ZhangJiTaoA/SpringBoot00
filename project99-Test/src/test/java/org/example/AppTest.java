@@ -8,6 +8,9 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
 import java.util.concurrent.*;
 
 import static java.lang.Thread.sleep;
@@ -215,4 +218,44 @@ public class AppTest
         b.drink();
 
     }
+
+    public class ZjtList<E extends Integer>{
+        public void add(E e){
+            System.out.println(e);
+        }
+    }
+
+    // 测试泛型
+    public void test02(){
+        ZjtList zjtList = new ZjtList();
+        zjtList.add(22);
+        Set<Integer> mySet=new HashSet<Integer>();
+        mySet.add(1);
+        mySet.add(2);
+        Iterator<Integer> iter = mySet.iterator();
+        while (iter.hasNext()){
+            System.out.println(iter.next());
+        }
+        System.out.println(1%4);
+        System.out.println(1&3);
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
